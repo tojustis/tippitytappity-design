@@ -18,11 +18,12 @@ classDiagram
   class Typing{
         - time: double
         - keystroke: char
-        - word: vector~string~
+        - word: string
+        - wordList: vector~string~
         - randomWord(worldList)
         - matchKeyToWord(words,keystroke)
         - measureTime(time)
-        - getWPM()
+        + getWPM()
 
   }
 ```

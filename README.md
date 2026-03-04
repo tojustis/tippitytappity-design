@@ -7,14 +7,7 @@ tippitytappity is a program to practice typing
 
 ```mermaid
 classDiagram
-  Skills <|-- Typing
-  class Skills{
-        + rank: int
-        - accuracy: float
-        - speed: double
-        - calcAcc()
-        - calcSpeed()
-  }
+  Typing <|-- Skills
   class Typing{
         - time: double
         - keystroke: char
@@ -26,6 +19,14 @@ classDiagram
         + getWPM()
 
   }
+  class Skills{
+        + rank: int
+        - accuracy: float
+        - speed: double
+        - calcAcc()
+        - calcSpeed()
+  }
+
 ```
 
 

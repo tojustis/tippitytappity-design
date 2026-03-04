@@ -5,9 +5,7 @@ tippitytappity is a program to practice typing
 
 ## Data model
 
----
-title: TippityTappity
----
+```mermaid
 classDiagram
   Skills <|-- Typing
   class Skills{
@@ -27,6 +25,6 @@ classDiagram
         - getWPM()
 
   }
-
+```
 
 

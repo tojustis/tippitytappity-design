@@ -5,19 +5,28 @@ tippitytappity is a program to practice typing
 
 ## Data model
 
-```mermaid
+---
+title: TippityTappity
+---
 classDiagram
-  ExampleParent <|-- ExampleChild
-  class ExampleParent{
-        - name: string
-        - email: string
-        - password: string
-        + login(user: string, pass: string) boolean
-        + get_email() string
+  Skills <|-- Typing
+  class Skills{
+        + rank: int
+        - accuracy: float
+        - speed: double
+        - calcAcc()
+        - calcSpeed()
   }
-  class ExampleChild{
-        - badges vector~string~
-        + add_badge(title: string)
-        + get_badges() vector~string~
+  class Typing{
+        - time: double
+        - keystroke: char
+        - word: vector~string~
+        - randomWord(worldList)
+        - matchKeyToWord(words,keystroke)
+        - measureTime(time)
+        - getWPM()
+
   }
-```
+
+
+

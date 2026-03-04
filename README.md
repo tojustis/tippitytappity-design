@@ -8,6 +8,8 @@ tippitytappity is a program to practice typing
 ```mermaid
 classDiagram
   Typing <|-- Skills
+  Typing <|-- History
+  Skills <|-- History
   class Typing{
         - time: double
         - keystroke: char
@@ -27,6 +29,16 @@ classDiagram
         - calcSpeed()
   }
 
+  class History {
+        - attemptCount: int
+        - attemptTracker: vector~Skill~
+        - userName: strings
+        - users: vector~string~
+        - trackUser(attemptTracker,user)
+
+
+
+  }
 ```
 
 
